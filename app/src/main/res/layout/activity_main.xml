@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:id="@+id/view">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            />
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.GridLayout
+        android:id="@+id/choice_grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:background="@color/gridBlack"
+        app:alignmentMode="alignBounds"
+        app:columnCount="3"
+        app:rowCount="4"
+        app:rowOrderPreserved="false"
+        app:useDefaultMargins="true"
+        android:layout_below="@+id/view"
+        android:layout_above="@+id/linear_layout">
+
+        <TextView style="@style/OurTextViewMainActivity"/>
+        <TextView style="@style/OurTextViewMainActivity"/>
+        <TextView style="@style/OurTextViewMainActivity"/>
+        <TextView style="@style/OurTextViewMainActivity"/>
+        <TextView style="@style/OurTextViewMainActivity"/>
+        <TextView style="@style/OurTextViewMainActivity"/>
+        <TextView style="@style/OurTextViewMainActivity"/>
+        <TextView style="@style/OurTextViewMainActivity"/>
+        <TextView style="@style/OurTextViewMainActivity"/>
+        <TextView style="@style/OurTextViewMainActivity"/>
+        <TextView style="@style/OurTextViewMainActivity"/>
+        <TextView style="@style/OurTextViewMainActivity"/>
+
+    </android.support.v7.widget.GridLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/linear_layout">
+
+        <ImageButton style="@style/OurButtonMainActivity"
+            android:id="@+id/call"
+            android:src="@android:drawable/ic_menu_call"/>
+
+        <Button style="@style/OurButtonMainActivity"
+            android:id="@+id/apps"
+            android:text="@string/all_apps"/>
+
+        <ImageButton style="@style/OurButtonMainActivity"
+            android:id="@+id/send_sms"
+            android:src="@android:drawable/ic_menu_send"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

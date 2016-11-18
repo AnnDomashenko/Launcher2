@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="all_apps">Apps</string>
+    <string name="view_list">List</string>
+    <string name="view_grid">Grid</string>
+    <string name="action_settings">Settings</string>
+    <string name="some_text">Some text</string>
+    <string name="delete">Delete</string>
+    <string name="action_info">Info</string>
+    <string name="text_edit_text">Enter the name of the application</string>
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/edit"
+        style="@style/OurEditText" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linear_layout"
+        />
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_grid"
+            style="@style/OurButtonAppActivity"
+            android:text="@string/view_grid" />
+
+        <Button
+            android:id="@+id/button_list"
+            style="@style/OurButtonAppActivity"
+            android:text="@string/view_list" />
+    </LinearLayout>
+
+
+</RelativeLayout>

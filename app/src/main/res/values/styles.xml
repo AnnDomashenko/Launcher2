@@ -1,0 +1,106 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+
+    <style name="MyActivityTheme" parent="AppTheme">
+        <item name="android:background">@android:color/holo_red_light</item>
+    </style>
+
+    <style name="OurButtonMainActivity">
+        <item name="android:layout_width">@dimen/zero_width</item>
+        <item name="android:layout_height">@dimen/height_item</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="OurButtonAppActivity">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="OurButtonItem">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="OurImage">
+        <item name="android:layout_width">@dimen/size_image</item>
+        <item name="android:layout_height">@dimen/size_image</item>
+        <item name="android:layout_marginTop">@dimen/indent_item</item>
+        <item name="android:layout_marginLeft">@dimen/indent_item</item>
+    </style>
+
+    <style name="OurTextViewMainActivity">
+        <item name="android:layout_height">@dimen/zero_width</item>
+        <item name="android:layout_width">@dimen/zero_width</item>
+        <item name="layout_columnWeight">1</item>
+        <item name="layout_rowWeight">1</item>
+        <item name="android:text">Some text</item>
+        <item name="android:textSize">@dimen/text_size</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/textViewWhite</item>
+        <item name="android:layout_margin">@dimen/border_line</item>
+    </style>
+
+    <style name="OurTextViewList">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/indent_item</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:layout_gravity">center_vertical|left</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="OurTextViewGrid">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginRight">@dimen/indent_item</item>
+        <item name="android:layout_marginLeft">@dimen/indent_item</item>
+        <item name="android:layout_marginBottom">@dimen/indent_item</item>
+        <item name="android:textSize">@dimen/size_text</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:maxLines">2</item>
+
+    </style>
+
+    <style name="OurTextViewPopupMenu">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/height_item</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:layout_marginTop">@dimen/border_line</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/margin_all</item>
+    </style>
+
+    <style name="OurEditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:inputType">text</item>
+        <item name="android:hint">@string/text_edit_text</item>
+        <item name="android:textColorHint">@android:color/darker_gray</item>
+    </style>
+
+</resources>

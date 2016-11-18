@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_list"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/black"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/image_item_recycle"
+        style="@style/OurImage"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="@dimen/indent_item" />
+
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/text_item_recycle"
+        style="@style/OurTextViewList"
+        android:layout_alignBottom="@+id/image_item_recycle"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/image_item_recycle"
+        android:layout_toLeftOf="@+id/button_info"
+        android:layout_toRightOf="@+id/image_item_recycle" />
+
+    <ImageButton
+        style="@style/OurButtonItem"
+        android:id="@+id/button_info"
+        android:layout_alignTop="@+id/image_item_recycle"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/margin_right_button_info"
+        android:onClick="showInfoApp"
+        android:src="@android:drawable/ic_menu_info_details" />
+
+    <ImageButton
+        style="@style/OurButtonItem"
+        android:id="@+id/button_menu"
+        android:layout_alignBottom="@+id/button_info"
+        android:layout_alignTop="@+id/image_item_recycle"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/margin_right_button_menu"
+        android:onClick="showMenu"
+        android:src="@drawable/ic_more_vert_black_24dp" />
+
+</RelativeLayout>
